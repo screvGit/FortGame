@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://0773qscf5d1j"]
+
+[ext_resource type="TileSet" uid="uid://b2ga1am8v8rwk" path="res://Assets/BlockTiles.tres" id="1_tmqf7"]
+
+[node name="TileMap_Btm" type="TileMapLayer"]
+tile_set = ExtResource("1_tmqf7")
+collision_enabled = false
