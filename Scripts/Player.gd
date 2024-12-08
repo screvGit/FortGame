@@ -8,7 +8,7 @@ var y_dir = 0
 var x_dir = 0
 
 # World values
-@export var z_level = 47
+@export var z_level = 49
 var tile_position = Vector2i(0, 0)
 var lower_layer = TileMapLayer.new()
 var curr_layer = TileMapLayer.new()

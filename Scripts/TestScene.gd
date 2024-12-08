@@ -32,12 +32,14 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$Player.set_layer_info(world[$Player.z_level - 1], world[$Player.z_level])
+	
 	for z in range(0, len(world)):
 		if z > $Player.z_level:
-			world[z].modulate = Color(1, 1, 1)
 			world[z].visible = false
 		else:
+			world[z].modulate = ($Player.z_level - z) * Color(.05, .05, .05) + Color(1, 1, 1)
 			world[z].visible = true
-	world[$Player.z_level].modulate = Color(.8, .8, .8)
+	world[$Player.z_level].modulate = Color(.7, .7, .7)
 	
 	pass
